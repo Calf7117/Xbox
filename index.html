@@ -6,6 +6,8 @@
 <title>Win $100 Xbox Gift Card - Free Entry</title>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@600;700&display=swap');
+
   * {
     margin: 0;
     padding: 0;
@@ -18,13 +20,38 @@
 
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f0f0f 0%, #1b1b1b 50%, #0a3d0a 100%);
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(27, 27, 27, 0.9) 50%, rgba(10, 61, 10, 0.95) 100%);
     background-attachment: fixed;
     color: #fff;
     min-height: 100vh;
     overflow-x: hidden;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+
+  .bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.4);
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .bg-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(16, 124, 16, 0.2) 100%);
   }
 
   .container {
@@ -81,6 +108,7 @@
   }
 
   h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 2.2rem;
     font-weight: 900;
     margin-bottom: 10px;
@@ -89,6 +117,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     line-height: 1.2;
+    text-shadow: 0 0 20px rgba(16, 124, 16, 0.5);
   }
 
   .subtitle {
@@ -113,6 +142,7 @@
   }
 
   .gift-card-visual .amount {
+    font-family: 'Orbitron', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
     color: #fff;
@@ -120,10 +150,12 @@
   }
 
   .gift-card-visual .label {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 700;
   }
 
   /* Social Proof Counter */
@@ -154,10 +186,12 @@
   }
 
   .value-section h2 {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.5rem;
     color: #107c10;
     margin-bottom: 15px;
     text-align: center;
+    font-weight: 700;
   }
 
   .benefits {
@@ -199,10 +233,12 @@
   }
 
   .steps-section h2 {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    font-weight: 700;
   }
 
   .steps {
@@ -276,6 +312,7 @@
   }
 
   .cta-button {
+    font-family: 'Rajdhani', sans-serif;
     display: block;
     width: 100%;
     background: linear-gradient(135deg, #ffcc00, #ff9900);
@@ -338,10 +375,12 @@
   }
 
   .testimonials h3 {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    font-weight: 700;
   }
 
   .testimonial {
@@ -384,10 +423,12 @@
   }
 
   .faq h3 {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    font-weight: 700;
   }
 
   .faq-item {
@@ -480,6 +521,8 @@
 </head>
 
 <body>
+
+<div class="bg-image"></div>
 
 <div class="limited-badge">🔥 Limited Spots</div>
 
