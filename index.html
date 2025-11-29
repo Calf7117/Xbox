@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Win $100 Xbox Gift Card - Free Entry</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #0f0f0f;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1b1b1b 50%, #0a3d0a 100%);
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding: 30px 0 20px;
+    position: relative;
+  }
+
+  .xbox-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background: linear-gradient(135deg, #107c10, #0e6b0e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 0 10px 30px rgba(16, 124, 16, 0.5);
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 10px 30px rgba(16, 124, 16, 0.5); }
+    50% { box-shadow: 0 15px 40px rgba(16, 124, 16, 0.8); }
+  }
+
+  .limited-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+    animation: shake 3s ease-in-out infinite;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+    20%, 40%, 60%, 80% { transform: translateX(3px); }
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #fff, #107c10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #c4c4c4;
+    margin-bottom: 20px;
+  }
+
+  .gift-card-visual {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #107c10, #0e6b0e);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(16, 124, 16, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gift-card-visual .amount {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .gift-card-visual .label {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Social Proof Counter */
+  .social-proof {
+    background: rgba(16, 124, 16, 0.15);
+    border: 1px solid rgba(16, 124, 16, 0.3);
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .social-proof .count {
+    color: #ffcc00;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  /* Value Proposition Section */
+  .value-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .value-section h2 {
+    font-size: 1.5rem;
+    color: #107c10;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(16, 124, 16, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid #107c10;
+    transition: all 0.3s ease;
+  }
+
+  .benefit-item:hover {
+    background: rgba(16, 124, 16, 0.2);
+    transform: translateX(5px);
+  }
+
+  .benefit-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .benefit-text {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+  }
+
+  /* How It Works Section */
+  .steps-section {
+    margin: 30px 0;
+  }
+
+  .steps-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #107c10, #0e6b0e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .step-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+    color: #c4c4c4;
+  }
+
+  /* Trust Badges */
+  .trust-badges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 25px 0;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 8px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #e0e0e0;
+  }
+
+  .badge-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* CTA Button */
+  .cta-section {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    color: #000;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(255, 204, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+  }
+
+  .cta-button:hover::before {
+    left: 100%;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 204, 0, 0.7);
+  }
+
+  .cta-subtext {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #c4c4c4;
+  }
+
+  .cta-subtext span {
+    color: #107c10;
+    font-weight: 600;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    margin: 30px 0;
+  }
+
+  .testimonials h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .testimonial {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  .testimonial::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3rem;
+    color: rgba(16, 124, 16, 0.3);
+    font-family: Georgia, serif;
+  }
+
+  .testimonial p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+
+  .testimonial .author {
+    font-size: 0.85rem;
+    color: #107c10;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* FAQ Section */
+  .faq {
+    margin: 30px 0;
+  }
+
+  .faq h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-question:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    color: #c4c4c4;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer.open {
+    max-height: 500px;
+    padding: 0 15px 15px;
+  }
+
+  .faq-icon {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-icon.open {
+    transform: rotate(180deg);
+  }
+
+  /* Timer */
+  .timer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #ffcc00;
+    font-weight: 600;
+  }
+
+  /* Privacy */
+  .privacy {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: #c4c4c4;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    .cta-button { font-size: 1.2rem; padding: 18px; }
+    .trust-badges { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="limited-badge">🔥 Limited Spots</div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="xbox-logo">🎮</div>
+    <h1>Win $100 Xbox Gift Card</h1>
+    <p class="subtitle">Your next gaming adventure starts here!</p>
+  </div>
+
+  <!-- Gift Card Visual -->
+  <div class="gift-card-visual">
+    <div class="amount">$100</div>
+    <div class="label">Xbox Gift Card</div>
+  </div>
+
+  <!-- Social Proof -->
+  <div class="social-proof">
+    🔥 <span class="count" id="entryCount">3,847</span> gamers entered today
+  </div>
+
+  <!-- Value Proposition -->
+  <div class="value-section">
+    <h2>What Could You Get With $100?</h2>
+    <div class="benefits">
+      <div class="benefit-item">
+        <div class="benefit-icon">🎮</div>
+        <div class="benefit-text"><strong>2 Brand New Games</strong> - Latest AAA titles</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⭐</div>
+        <div class="benefit-text"><strong>Game Pass Ultimate</strong> - 6+ months access</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🎯</div>
+        <div class="benefit-text"><strong>DLC & Expansions</strong> - Level up your favorites</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💎</div>
+        <div class="benefit-text"><strong>In-Game Currency</strong> - V-Bucks, COD Points & more</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <div class="steps-section">
+    <h2>How It Works - It's Easy!</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Enter Your Email</h3>
+          <p>Click below and enter your email on the next page</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Confirm Your Entry</h3>
+          <p>Verify your information to complete registration</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Get Your Chance to Win</h3>
+          <p>You're entered! Winner announced weekly</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Badges -->
+  <div class="trust-badges">
+    <div class="badge">
+      <span class="badge-icon">✓</span>
+      No Purchase Necessary
+    </div>
+    <div class="badge">
+      <span class="badge-icon">🇺🇸</span>
+      US Residents Only
+    </div>
+    <div class="badge">
+      <span class="badge-icon">📱</span>
+      Android Compatible
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <a href="https://applocked.org/cl/i/82dqmr" class="cta-button" id="ctaButton">
+      🎁 Get My Chance to Win →
+    </a>
+    <p class="cta-subtext">
+      <span>No cost</span> • <span>No download</span> • <span>Instant entry</span>
+    </p>
+  </div>
+
+  <!-- Timer -->
+  <div class="timer" id="timer">⏰ Limited entries available - <strong id="timeLeft">14:59</strong> remaining</div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <h3>Recent Winners 🏆</h3>
+    <div class="testimonial">
+      <p>"I actually won! Used it to get Game Pass Ultimate and Elden Ring. This is legit!"</p>
+      <p class="author">— Marcus T., Phoenix AZ</p>
+    </div>
+    <div class="testimonial">
+      <p>"Entered on my phone, won $100. Bought COD and still had credit left. Amazing!"</p>
+      <p class="author">— Tyler R., Miami FL</p>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h3>Quick Questions</h3>
+    
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        Is this really free?
+        <span class="faq-icon">▼</span>
+      </button>
+      <div class="faq-answer">
+        Yes! 100% free entry. No purchase necessary. No hidden fees. Just enter your email and you're in the drawing.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        How do I claim if I win?
+        <span class="faq-icon">▼</span>
+      </button>
+      <div class="faq-answer">
+        Winners are notified by email within 24 hours. You'll receive your Xbox Gift Card code directly to redeem on your account.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        Who can enter?
+        <span class="faq-icon">▼</span>
+      </button>
+      <div class="faq-answer">
+        US residents 16+ with a valid email address. Must have Android device to complete entry. One entry per person.
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy Statement -->
+  <div class="privacy">
+    🔒 <strong>Your Privacy Matters</strong><br>
+    We never sell your information. Your email is only used for winner notification. See full sweepstakes rules on next page.
+  </div>
+
+  <!-- Final CTA -->
+  <div class="cta-section">
+    <a href="https://applocked.org/cl/i/82dqmr" class="cta-button">
+      🎮 Claim Your Entry Now
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Xbox Gift Card Sweepstakes. No purchase necessary. Void where prohibited. Must be 16+ and US resident. Official rules available upon entry.
+</footer>
+
+<script>
+  // Entry counter (fluctuating)
+  function updateEntryCount() {
+    const countEl = document.getElementById('entryCount');
+    let current = parseInt(countEl.innerText.replace(/,/g, ''));
+    const change = Math.floor(Math.random() * 8) + 1;
+    current += change;
+    countEl.innerText = current.toLocaleString();
+    setTimeout(updateEntryCount, 3000 + Math.random() * 2000);
+  }
+  setTimeout(updateEntryCount, 2000);
+
+  // Countdown timer
+  let timeLeft = 899; // 14:59
+  function updateTimer() {
+    const min = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+    const sec = String(timeLeft % 60).padStart(2, '0');
+    document.getElementById('timeLeft').innerText = `${min}:${sec}`;
+    if (timeLeft > 0) {
+      timeLeft--;
+      setTimeout(updateTimer, 1000);
+    } else {
+      document.getElementById('timeLeft').innerText = '00:00';
+    }
+  }
+  updateTimer();
+
+  // FAQ Toggle
+  function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector('.faq-icon');
+    
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer').forEach(item => {
+      if (item !== answer) {
+        item.classList.remove('open');
+      }
+    });
+    document.querySelectorAll('.faq-icon').forEach(item => {
+      if (item !== icon) {
+        item.classList.remove('open');
+      }
+    });
+    
+    // Toggle current FAQ
+    answer.classList.toggle('open');
+    icon.classList.toggle('open');
+  }
+
+  // CTA click tracking
+  document.querySelectorAll('.cta-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+      // Track click event here if using analytics
+      console.log('CTA clicked');
+    });
+  });
+</script>
+
+</body>
+</html>
