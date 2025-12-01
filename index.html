@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win $100 Xbox Gift Card - Free Entry</title>
+<title>🎄 Holiday Special: Win $100 Xbox Gift Card - Free Entry!</title>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@600;700&family=Mountains+of+Christmas:wght@700&display=swap');
 
   * {
     margin: 0;
@@ -54,6 +54,47 @@
     background: radial-gradient(circle at center, transparent 0%, rgba(16, 124, 16, 0.2) 100%);
   }
 
+  /* Snowflakes Animation */
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    color: #fff;
+    font-size: 1em;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+
+  /* Holiday Lights Border */
+  .holiday-lights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, 
+      #ff0000 0%, #00ff00 10%, #0000ff 20%, 
+      #ffff00 30%, #ff00ff 40%, #00ffff 50%,
+      #ff0000 60%, #00ff00 70%, #0000ff 80%, 
+      #ffff00 90%, #ff00ff 100%);
+    background-size: 200% 100%;
+    animation: lights 3s linear infinite;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+
+  @keyframes lights {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+  }
+
   .container {
     max-width: 480px;
     margin: 0 auto;
@@ -87,18 +128,46 @@
   }
 
   .limited-badge {
-    position: absolute;
-    top: 15px;
+    position: fixed;
+    top: 25px;
     right: 15px;
-    background: linear-gradient(135deg, #ffcc00, #ff9900);
-    color: #000;
+    background: linear-gradient(135deg, #ff0000, #c41e3a);
+    color: #fff;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
     animation: shake 3s ease-in-out infinite;
+    z-index: 1001;
+    border: 2px solid #fff;
+  }
+
+  /* Holiday Banner */
+  .holiday-banner {
+    background: linear-gradient(135deg, #c41e3a 0%, #107c10 50%, #c41e3a 100%);
+    padding: 12px 20px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 20px rgba(196, 30, 58, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-top: none;
+  }
+
+  .holiday-banner-text {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.3); }
+    50% { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.6); }
   }
 
   @keyframes shake {
@@ -523,16 +592,22 @@
 <body>
 
 <div class="bg-image"></div>
+<div class="holiday-lights"></div>
 
-<div class="limited-badge">🔥 Limited Spots</div>
+<div class="limited-badge">🎄 Dec Special</div>
 
 <div class="container">
+
+  <!-- Holiday Banner -->
+  <div class="holiday-banner">
+    <div class="holiday-banner-text">🎅 Holiday Gaming Giveaway 🎁</div>
+  </div>
 
   <!-- Header -->
   <div class="header">
     <div class="xbox-logo">🎮</div>
     <h1>Win $100 Xbox Gift Card</h1>
-    <p class="subtitle">Your next gaming adventure starts here!</p>
+    <p class="subtitle">🎄 The perfect gift for gamers this holiday season! 🎄</p>
   </div>
 
   <!-- Gift Card Visual -->
@@ -749,7 +824,7 @@
       console.log('CTA clicked');
     });
   });
-</script>
 
-</body>
-</html>
+  // Holiday falling items animation
+  function createFallingItem() {
+    const items = ['❄', '🎁', '🎄', '⭐', '🎮', '🎅
